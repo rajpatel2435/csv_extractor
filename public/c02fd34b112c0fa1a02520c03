@@ -1,0 +1,1200 @@
+﻿StaticContentID,Title,SubTitle,PageTitle,PageName,Content,IsActive,CreationDate,LastUserID,LastModifiedDate
+6307,4thandphilly Landing Page,4thandphilly Landing Page,4thandphilly Landing Page,4thandphilly," <!doctype html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1, shrink-to-fit=no"">
+  <meta name=""description"" content=""Online Sports Betting with America's favorite Online Sportsbook, Casino &amp; Horse Racing. BetUS offers fast payouts so Bet Online on your favorite sports today"">
+  <!--designer EDIT-->
+  <title>BetUS 125% Bonus</title>
+  <link rel=""shortcut icon"" type=""image/jpg"" href=""https://a.betuscdn.com/sites/betus/landing/img/favicon.ico"">
+  <link rel=""stylesheet"" href=""https://a.betuscdn.com/sites/betus/landing/css/landing-052223.min.css"">
+  <!--pixel CODE 033021-->
+  <script src =""https://up.pixel.ad/assets/up.js?um=1"" async></script>
+  <script> cntrUpTag.track('cntrData', '103f7a92731b7ec5');</script>
+  <!--pixel CODE 050923-->
+  <!--designer EDIT-->
+  <script>document.cookie = 'promo=4thandphilly; expires='+ new Date(new Date().getTime()+1000*60*60*24*1).toGMTString() + '; path=/; domain=.betus.com.pa';</script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/jquery.min.js"" defer></script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/bootstrap.min.js"" defer></script>
+
+<style>
+/* DESIGNER AREA */
+/* V-110724.2024.3 */
+/* LP cecastro, 011325, AFDESK-3195, landing-html-ufc-dern-ribas.html */
+
+:root {
+  --body-background-color: #06162d;
+  --links-color: #2F3C5A;
+  --titles-color: #2F3C5A;
+  --header-background-color: #000;
+  --header-border-bottom: rgba(0, 0, 0, 0.8);
+  --slogan-color: #cccac8;
+  --logos-background: rgba(0,0,0,0.8);
+  --logos-border: #282728;
+  --button-main-background: hsl(0, 100%, 38%);
+  --button-main-border: hsl(0, 100%, 28%);
+  --button-opening: hsl(0, 100%, 90%);
+  --button-open-border: hsl(0, 100%, 100%);
+  --terms-link-color: rgba(255,255,255,0.53);
+  --terms-link-hover-color: rgba(255,255,255,1);
+/* Keep only https://a.betuscdn.com/sites/betus/landing/img/ */
+  --image-background-xl: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-nfl-pre-seasons-xl3.webp"");
+  --image-background-md: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-nfl-pre-seasons-md2.webp"");
+  --image-background-sm: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-nfl-pre-seasons-sm2.webp"");
+}
+
+/* DEV AREA */
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+background-color: var(--body-background-color);
+}
+a { color: var(--links-color); }
+a:hover,
+a:focus {
+color: var(--links-color);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+color: var(--titles-color);
+font-weight: 700;
+}
+#header{
+border-bottom: solid 1px var(--header-border-bottom);
+position: relative;
+background-color: var(--header-background-color);
+}
+.slogan {
+  color: var(--slogan-color);
+}
+.image-cont{
+  background-image: var(--image-background-xl);
+  background-position: top center;
+  background-size: cover;
+}
+.featured-bar{
+  background-color: var(--logos-background);
+  border: solid 1px var(--logos-border);
+}
+.fb-list{
+  font-size: 0.861008610086101vw;
+}
+/* BUTTONS */
+.bt-cont .btn-main {
+font-weight: 700;
+color: #fff;
+background-color: var(--button-main-background);
+border: solid 1px var(--button-main-border);
+}
+.bt-cont .btn-main::before {
+background-color: var(--button-opening);
+}
+.bt-cont .btn-main:hover{
+color: var(--button-main-background);
+border: solid 1px var(--button-open-border);
+}
+@keyframes glowing {
+0% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+50% {
+box-shadow: 0 0 30px var(--button-main-background);
+}
+100% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+}
+.btn-terms {
+    color: var(--terms-link-color);
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.btn-terms:hover, .btn-terms:focus {
+    color: var(--terms-link-hover-color);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 991px){
+.image-cont{
+  background-image: var(--image-background-md);
+  background-position: center center;
+  background-size: cover;
+}
+}
+@media screen and (max-width: 575px){
+.image-cont{
+  background-image: var(--image-background-sm);
+  background-position: center center;
+  background-size: cover;
+}
+}
+</style>
+</head>
+<body class=""image-cont"">
+<!--modal-->
+<div class=""modal"" id=""terms-modal"" tabindex=""-1"">
+<div class=""modal-dialog modal-dialog-centered"">
+<div class=""modal-content bg-dark border border-light"">
+<div class=""modal-header"">
+<h5 class=""modal-title text-light"">Terms and Conditions</h5>
+<button aria-label=""Close"" class=""close text-light"" data-dismiss=""modal"" type=""button""><svg fill=""currentColor"" height=""32px"" style=""enable-background:new 0 0 32 32;"" version=""1.1"" viewbox=""0 0 32 32"" width=""32px"" x=""0px"" xml:space=""preserve"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px""> <path d=""M18.8,16L28.9,5.9c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L16,13.2L5.9,3.1c-0.8-0.8-2-0.8-2.8,0 c-0.8,0.8-0.8,2,0,2.8L13.2,16L3.1,26.1c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6L16,18.8l10.1,10.1 c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L18.8,16z""></path></svg></button></div>
+<!--designer EDIT-->
+<div class=""modal-body"">
+<ol class=""ml-n3"">
+<li>You will receive a 125% sign-up bonus on your first, second and third deposit plus Gambler&#8217;s Insurance.</li>
+<li>A minimum deposit of $100 is required to qualify for the bonus.</li>
+<li>First deposit: 125% Sportsbook sign-up bonus up to $2,000, 16X Rollover. Second and Third deposit: 100% sports bonus 14X rollover + 25% casino bonus, up to $2,000</li>
+<li>In order to receive a bonus you must use the promo code <strong>4THANDPHILLY</strong> in the cashier while making your deposit.</li>
+<li>You must have claimed the 125% sign-up bonus on your first-time deposit in order for it to apply on your second and/or third deposit.</li>
+<li>This promotion is non-transferable.</li>
+<li>For more details regarding Gambler&#8217;s Insurance, <a class=""text-primary"" href=""https://www.betus.com.pa/promotions/gamblers_insurance_241/"" target=""_blank"">Click Here</a>.</li>
+<li>Please see BetUS&#8217; general <a class=""text-primary"" href=""https://www.betus.com.pa/Promotions/PromotionDetail/?bonusId=383"" target=""_blank"">rules</a> for additional terms and conditions regarding bonuses.</li>
+<li>Sports bonuses can only be used in the sportsbook, casino freeplays in the casino.</li>
+<li>BetUS reserves the right to alter or amend the terms and conditions of this promotion at any time without notice.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<!--end MODAL-->
+
+
+<div id=""header"">
+<div class=""main-content"">
+<a href=""https://www.betus.com.pa/join/"">
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/betus_logo.svg"" alt=""BETUS"" class=""logo img-fluid"" width=""226"" height=""48"">
+</a>
+<div class=""h-box-left"">
+<div class=""slogan"">AMERICA&#8217;S <br>FAVORITE <br>SPORTSBOOK</div>
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/30-plus-years-aniversary-xl.svg"" alt=""30+ Years Aniversary"" class=""aniversary"" width=""118"" height=""213"">
+</div>
+</div>
+</div>
+<div id=""content-promos"">
+  <div class=""promo-container main-content"">
+    <div class=""promo-box"">
+      <!--designer EDIT-->
+      <a href=""https://www.betus.com.pa/join/"">
+      <img src=""https://a.betuscdn.com/sites/betus/landing/img/nfl-preseason-allsports-4thandphilly-txt1.svg"" class=""promo-text"" alt=""Promo"" width=""620"" height=""319"" loading=""lazy"" decoding=""async""></a>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+    </div>
+  </div>
+    <div class=""footer main-content"">
+      <div class=""featured-bar"">
+        <ul class=""fb-list"">
+          <li class=""asfeatured"">AS FEATURED ON</li>
+          <li class=""forbes""><img src=""https://a.betuscdn.com/sites/betus/landing/img/forbes-xl.svg"" alt=""Forbes"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""newsweek""><img src=""https://a.betuscdn.com/sites/betus/landing/img/newsweek-xl.svg"" alt=""Newsweek"" class=""featured-logo"" width=""160"" height=""23""></li>
+          <li class=""sillustrated""><img src=""https://a.betuscdn.com/sites/betus/landing/img/sports-illustrated-xl.svg"" alt=""Sports Illustrated"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""tmz""><img src=""https://a.betuscdn.com/sites/betus/landing/img/tmz-xl.svg"" alt=""Tmz"" class=""featured-logo"" width=""80"" height=""32""></li>
+          <li class=""nbc""><img src=""https://a.betuscdn.com/sites/betus/landing/img/nbc-sports-xl.svg"" alt=""NBC Sports"" class=""featured-logo"" width=""180"" height=""29""></li>
+          <li class=""fox""><img src=""https://a.betuscdn.com/sites/betus/landing/img/fox-sports-xl.svg"" alt=""Fox Sports"" class=""featured-logo"" width=""90"" height=""54""></li>
+        </ul>      
+      </div>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+      <a class=""btn-terms"" data-toggle=""modal"" href=""#terms-modal"" id=""terms-modal-btn"">Terms & Conditions</a>
+    </div>
+</div>
+
+
+</body>
+</html>",1,2025-01-14 09:11:17.303,6457,2025-01-14 09:12:09.603
+6306,SmartBetLink Landing Page,SmartBetLink Landing Page,SmartBetLink Landing Page,SmartBetLink," <!doctype html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1, shrink-to-fit=no"">
+  <meta name=""description"" content=""Online Sports Betting with America's favorite Online Sportsbook, Casino &amp; Horse Racing. BetUS offers fast payouts so Bet Online on your favorite sports today"">
+  <!--designer EDIT-->
+  <title>BetUS 125% Bonus</title>
+  <link rel=""shortcut icon"" type=""image/jpg"" href=""https://a.betuscdn.com/sites/betus/landing/img/favicon.ico"">
+  <link rel=""stylesheet"" href=""https://a.betuscdn.com/sites/betus/landing/css/landing-052223.min.css"">
+  <!--pixel CODE 033021-->
+  <script src =""https://up.pixel.ad/assets/up.js?um=1"" async></script>
+  <script> cntrUpTag.track('cntrData', '103f7a92731b7ec5');</script>
+  <!--pixel CODE 050923-->
+  <!--designer EDIT-->
+  <script>document.cookie = 'promo=smartbetlink; expires='+ new Date(new Date().getTime()+1000*60*60*24*1).toGMTString() + '; path=/; domain=.betus.com.pa';</script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/jquery.min.js"" defer></script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/bootstrap.min.js"" defer></script>
+
+<style>
+/* DESIGNER AREA */
+/* V-110724.2024.3 */
+/* LP cecastro, 011325, AFDESK-3196, landing-html-generic-smartbetlink.html */
+
+:root {
+  --body-background-color: #06162d;
+  --links-color: #2F3C5A;
+  --titles-color: #2F3C5A;
+  --header-background-color: #000;
+  --header-border-bottom: rgba(0, 0, 0, 0.8);
+  --slogan-color: #cccac8;
+  --logos-background: rgba(0,0,0,0.8);
+  --logos-border: #282728;
+  --button-main-background: hsl(0, 100%, 38%);
+  --button-main-border: hsl(0, 100%, 28%);
+  --button-opening: hsl(0, 100%, 90%);
+  --button-open-border: hsl(0, 100%, 100%);
+  --terms-link-color: rgba(255,255,255,0.53);
+  --terms-link-hover-color: rgba(255,255,255,1);
+/* Keep only https://a.betuscdn.com/sites/betus/landing/img/ */
+  --image-background-xl: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-nfl-pre-seasons-xl3.webp"");
+  --image-background-md: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-nfl-pre-seasons-md2.webp"");
+  --image-background-sm: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-nfl-pre-seasons-sm2.webp"");
+}
+
+/* DEV AREA */
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+background-color: var(--body-background-color);
+}
+a { color: var(--links-color); }
+a:hover,
+a:focus {
+color: var(--links-color);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+color: var(--titles-color);
+font-weight: 700;
+}
+#header{
+border-bottom: solid 1px var(--header-border-bottom);
+position: relative;
+background-color: var(--header-background-color);
+}
+.slogan {
+  color: var(--slogan-color);
+}
+.image-cont{
+  background-image: var(--image-background-xl);
+  background-position: top center;
+  background-size: cover;
+}
+.featured-bar{
+  background-color: var(--logos-background);
+  border: solid 1px var(--logos-border);
+}
+.fb-list{
+  font-size: 0.861008610086101vw;
+}
+/* BUTTONS */
+.bt-cont .btn-main {
+font-weight: 700;
+color: #fff;
+background-color: var(--button-main-background);
+border: solid 1px var(--button-main-border);
+}
+.bt-cont .btn-main::before {
+background-color: var(--button-opening);
+}
+.bt-cont .btn-main:hover{
+color: var(--button-main-background);
+border: solid 1px var(--button-open-border);
+}
+@keyframes glowing {
+0% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+50% {
+box-shadow: 0 0 30px var(--button-main-background);
+}
+100% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+}
+.btn-terms {
+    color: var(--terms-link-color);
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.btn-terms:hover, .btn-terms:focus {
+    color: var(--terms-link-hover-color);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 991px){
+.image-cont{
+  background-image: var(--image-background-md);
+  background-position: center center;
+  background-size: cover;
+}
+}
+@media screen and (max-width: 575px){
+.image-cont{
+  background-image: var(--image-background-sm);
+  background-position: center center;
+  background-size: cover;
+}
+}
+</style>
+</head>
+<body class=""image-cont"">
+<!--modal-->
+<div class=""modal"" id=""terms-modal"" tabindex=""-1"">
+<div class=""modal-dialog modal-dialog-centered"">
+<div class=""modal-content bg-dark border border-light"">
+<div class=""modal-header"">
+<h5 class=""modal-title text-light"">Terms and Conditions</h5>
+<button aria-label=""Close"" class=""close text-light"" data-dismiss=""modal"" type=""button""><svg fill=""currentColor"" height=""32px"" style=""enable-background:new 0 0 32 32;"" version=""1.1"" viewbox=""0 0 32 32"" width=""32px"" x=""0px"" xml:space=""preserve"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px""> <path d=""M18.8,16L28.9,5.9c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L16,13.2L5.9,3.1c-0.8-0.8-2-0.8-2.8,0 c-0.8,0.8-0.8,2,0,2.8L13.2,16L3.1,26.1c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6L16,18.8l10.1,10.1 c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L18.8,16z""></path></svg></button></div>
+<!--designer EDIT-->
+<div class=""modal-body"">
+<ol class=""ml-n3"">
+<li>You will receive a 125% sign-up bonus on your first, second and third deposit plus Gambler&#8217;s Insurance.</li>
+<li>A minimum deposit of $100 is required to qualify for the bonus.</li>
+<li>First deposit: 125% Sportsbook sign-up bonus up to $2,000, 16X Rollover. Second and Third deposit: 100% sports bonus 14X rollover + 25% casino bonus, up to $2,000</li>
+<li>In order to receive a bonus you must use the promo code <strong>SMARTBETLINK</strong> in the cashier while making your deposit.</li>
+<li>You must have claimed the 125% sign-up bonus on your first-time deposit in order for it to apply on your second and/or third deposit.</li>
+<li>This promotion is non-transferable.</li>
+<li>For more details regarding Gambler&#8217;s Insurance, <a class=""text-primary"" href=""https://www.betus.com.pa/promotions/gamblers_insurance_241/"" target=""_blank"">Click Here</a>.</li>
+<li>Please see BetUS&#8217; general <a class=""text-primary"" href=""https://www.betus.com.pa/Promotions/PromotionDetail/?bonusId=383"" target=""_blank"">rules</a> for additional terms and conditions regarding bonuses.</li>
+<li>Sports bonuses can only be used in the sportsbook, casino freeplays in the casino.</li>
+<li>BetUS reserves the right to alter or amend the terms and conditions of this promotion at any time without notice.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<!--end MODAL-->
+
+
+<div id=""header"">
+<div class=""main-content"">
+<a href=""https://www.betus.com.pa/join/"">
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/betus_logo.svg"" alt=""BETUS"" class=""logo img-fluid"" width=""226"" height=""48"">
+</a>
+<div class=""h-box-left"">
+<div class=""slogan"">AMERICA&#8217;S <br>FAVORITE <br>SPORTSBOOK</div>
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/30-plus-years-aniversary-xl.svg"" alt=""30+ Years Aniversary"" class=""aniversary"" width=""118"" height=""213"">
+</div>
+</div>
+</div>
+<div id=""content-promos"">
+  <div class=""promo-container main-content"">
+    <div class=""promo-box"">
+      <!--designer EDIT-->
+      <a href=""https://www.betus.com.pa/join/"">
+      <img src=""https://a.betuscdn.com/sites/betus/landing/img/nfl-preseason-allsports-smartbetlink-txt.svg"" class=""promo-text"" alt=""Promo"" width=""620"" height=""319"" loading=""lazy"" decoding=""async""></a>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+    </div>
+  </div>
+    <div class=""footer main-content"">
+      <div class=""featured-bar"">
+        <ul class=""fb-list"">
+          <li class=""asfeatured"">AS FEATURED ON</li>
+          <li class=""forbes""><img src=""https://a.betuscdn.com/sites/betus/landing/img/forbes-xl.svg"" alt=""Forbes"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""newsweek""><img src=""https://a.betuscdn.com/sites/betus/landing/img/newsweek-xl.svg"" alt=""Newsweek"" class=""featured-logo"" width=""160"" height=""23""></li>
+          <li class=""sillustrated""><img src=""https://a.betuscdn.com/sites/betus/landing/img/sports-illustrated-xl.svg"" alt=""Sports Illustrated"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""tmz""><img src=""https://a.betuscdn.com/sites/betus/landing/img/tmz-xl.svg"" alt=""Tmz"" class=""featured-logo"" width=""80"" height=""32""></li>
+          <li class=""nbc""><img src=""https://a.betuscdn.com/sites/betus/landing/img/nbc-sports-xl.svg"" alt=""NBC Sports"" class=""featured-logo"" width=""180"" height=""29""></li>
+          <li class=""fox""><img src=""https://a.betuscdn.com/sites/betus/landing/img/fox-sports-xl.svg"" alt=""Fox Sports"" class=""featured-logo"" width=""90"" height=""54""></li>
+        </ul>      
+      </div>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+      <a class=""btn-terms"" data-toggle=""modal"" href=""#terms-modal"" id=""terms-modal-btn"">Terms & Conditions</a>
+    </div>
+</div>
+
+
+</body>
+</html>",1,2025-01-14 09:00:38.293,6457,2025-01-14 09:03:32.750
+5808,ufc_iceman1 Landing Page,ufc_iceman1 Landing Page,ufc_iceman1 Landing Page,ufc_iceman1,"<!doctype html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1, shrink-to-fit=no"">
+  <meta name=""description"" content=""Online Sports Betting with America's favorite Online Sportsbook, Casino &amp; Horse Racing. BetUS offers fast payouts so Bet Online on your favorite sports today"">
+  <!--designer EDIT-->
+  <title>BetUS 125% Bonus</title>
+  <link rel=""shortcut icon"" type=""image/jpg"" href=""https://a.betuscdn.com/sites/betus/landing/img/favicon.ico"">
+  <link rel=""stylesheet"" href=""https://a.betuscdn.com/sites/betus/landing/css/landing-052223.min.css"">
+  <!--pixel CODE 033021-->
+  <script src =""https://up.pixel.ad/assets/up.js?um=1"" async></script>
+  <script> cntrUpTag.track('cntrData', '103f7a92731b7ec5');</script>
+  <!--pixel CODE 050923-->
+  <!--designer EDIT-->
+  <script>document.cookie = 'promo=iceman; expires='+ new Date(new Date().getTime()+1000*60*60*24*1).toGMTString() + '; path=/; domain=.betus.com.pa';</script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/jquery.min.js"" defer></script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/bootstrap.min.js"" defer></script>
+
+<style>
+/* DESIGNER AREA */
+/* V-110724.2024.3 */
+/* LP CeCas, 010825, AFDESK-3192, landing-html-ufc-dern-ribas.html */
+
+:root {
+  --body-background-color: #06162d;
+  --links-color: #2F3C5A;
+  --titles-color: #2F3C5A;
+  --header-background-color: #000;
+  --header-border-bottom: rgba(0, 0, 0, 0.8);
+  --slogan-color: #cccac8;
+  --logos-background: rgba(0,0,0,0.8);
+  --logos-border: #282728;
+  --button-main-background: hsl(0, 100%, 38%);
+  --button-main-border: hsl(0, 100%, 28%);
+  --button-opening: hsl(0, 100%, 90%);
+  --button-open-border: hsl(0, 100%, 100%);
+  --terms-link-color: rgba(255,255,255,0.53);
+  --terms-link-hover-color: rgba(255,255,255,1);
+/* Keep only https://a.betuscdn.com/sites/betus/landing/img/ */
+  --image-background-xl: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-ufc-dern-ribas-xl.webp"");
+  --image-background-md: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-ufc-dern-ribas-md.webp"");
+  --image-background-sm: url(""https://a.betuscdn.com/sites/betus/landing/img/landing-html-ufc-dern-ribas-sm.webp"");
+}
+
+/* DEV AREA */
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+background-color: var(--body-background-color);
+}
+a { color: var(--links-color); }
+a:hover,
+a:focus {
+color: var(--links-color);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+color: var(--titles-color);
+font-weight: 700;
+}
+#header{
+border-bottom: solid 1px var(--header-border-bottom);
+position: relative;
+background-color: var(--header-background-color);
+}
+.slogan {
+  color: var(--slogan-color);
+}
+.image-cont{
+  background-image: var(--image-background-xl);
+  background-position: top center;
+  background-size: cover;
+}
+.featured-bar{
+  background-color: var(--logos-background);
+  border: solid 1px var(--logos-border);
+}
+.fb-list{
+  font-size: 0.861008610086101vw;
+}
+/* BUTTONS */
+.bt-cont .btn-main {
+font-weight: 700;
+color: #fff;
+background-color: var(--button-main-background);
+border: solid 1px var(--button-main-border);
+}
+.bt-cont .btn-main::before {
+background-color: var(--button-opening);
+}
+.bt-cont .btn-main:hover{
+color: var(--button-main-background);
+border: solid 1px var(--button-open-border);
+}
+@keyframes glowing {
+0% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+50% {
+box-shadow: 0 0 30px var(--button-main-background);
+}
+100% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+}
+.btn-terms {
+    color: var(--terms-link-color);
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.btn-terms:hover, .btn-terms:focus {
+    color: var(--terms-link-hover-color);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 991px){
+.image-cont{
+  background-image: var(--image-background-md);
+  background-position: center center;
+  background-size: cover;
+}
+}
+@media screen and (max-width: 575px){
+.image-cont{
+  background-image: var(--image-background-sm);
+  background-position: center center;
+  background-size: cover;
+}
+}
+</style>
+</head>
+<body class=""image-cont"">
+<!--modal-->
+<div class=""modal"" id=""terms-modal"" tabindex=""-1"">
+<div class=""modal-dialog modal-dialog-centered"">
+<div class=""modal-content bg-dark border border-light"">
+<div class=""modal-header"">
+<h5 class=""modal-title text-light"">Terms and Conditions</h5>
+<button aria-label=""Close"" class=""close text-light"" data-dismiss=""modal"" type=""button""><svg fill=""currentColor"" height=""32px"" style=""enable-background:new 0 0 32 32;"" version=""1.1"" viewbox=""0 0 32 32"" width=""32px"" x=""0px"" xml:space=""preserve"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px""> <path d=""M18.8,16L28.9,5.9c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L16,13.2L5.9,3.1c-0.8-0.8-2-0.8-2.8,0 c-0.8,0.8-0.8,2,0,2.8L13.2,16L3.1,26.1c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6L16,18.8l10.1,10.1 c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L18.8,16z""></path></svg></button></div>
+<!--designer EDIT-->
+<div class=""modal-body"">
+<ol class=""ml-n3"">
+<li>You will receive a 125% sign-up bonus on your first, second and third deposit plus Gambler&#8217;s Insurance.</li>
+<li>A minimum deposit of $100 is required to qualify for the bonus.</li>
+<li>First deposit: 125% Sportsbook sign-up bonus up to $2,000, 16X Rollover. Second and Third deposit: 100% sports bonus 14X rollover + 25% casino bonus, up to $2,000</li>
+<li>In order to receive a bonus you must use the promo code <strong>ICEMAN</strong> in the cashier while making your deposit.</li>
+<li>You must have claimed the 125% sign-up bonus on your first-time deposit in order for it to apply on your second and/or third deposit.</li>
+<li>This promotion is non-transferable.</li>
+<li>For more details regarding Gambler&#8217;s Insurance, <a class=""text-primary"" href=""https://www.betus.com.pa/promotions/gamblers_insurance_241/"" target=""_blank"">Click Here</a>.</li>
+<li>Please see BetUS&#8217; general <a class=""text-primary"" href=""https://www.betus.com.pa/Promotions/PromotionDetail/?bonusId=383"" target=""_blank"">rules</a> for additional terms and conditions regarding bonuses.</li>
+<li>Sports bonuses can only be used in the sportsbook, casino freeplays in the casino.</li>
+<li>BetUS reserves the right to alter or amend the terms and conditions of this promotion at any time without notice.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<!--end MODAL-->
+
+
+<div id=""header"">
+<div class=""main-content"">
+<a href=""https://www.betus.com.pa/join/"">
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/betus_logo.svg"" alt=""BETUS"" class=""logo img-fluid"" width=""226"" height=""48"">
+</a>
+<div class=""h-box-left"">
+<div class=""slogan"">AMERICA&#8217;S <br>FAVORITE <br>SPORTSBOOK</div>
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/30-plus-years-aniversary-xl.svg"" alt=""30+ Years Aniversary"" class=""aniversary"" width=""118"" height=""213"">
+</div>
+</div>
+</div>
+<div id=""content-promos"">
+  <div class=""promo-container main-content"">
+    <div class=""promo-box"">
+      <!--designer EDIT-->
+      <a href=""https://www.betus.com.pa/join/"">
+      <img src=""https://a.betuscdn.com/sites/betus/landing/img/landing-html-ufc-dern-ribas-iceman-txt.webp"" class=""promo-text"" alt=""Promo"" width=""620"" height=""319"" loading=""lazy"" decoding=""async""></a>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+    </div>
+  </div>
+    <div class=""footer main-content"">
+      <div class=""featured-bar"">
+        <ul class=""fb-list"">
+          <li class=""asfeatured"">AS FEATURED ON</li>
+          <li class=""forbes""><img src=""https://a.betuscdn.com/sites/betus/landing/img/forbes-xl.svg"" alt=""Forbes"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""newsweek""><img src=""https://a.betuscdn.com/sites/betus/landing/img/newsweek-xl.svg"" alt=""Newsweek"" class=""featured-logo"" width=""160"" height=""23""></li>
+          <li class=""sillustrated""><img src=""https://a.betuscdn.com/sites/betus/landing/img/sports-illustrated-xl.svg"" alt=""Sports Illustrated"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""tmz""><img src=""https://a.betuscdn.com/sites/betus/landing/img/tmz-xl.svg"" alt=""Tmz"" class=""featured-logo"" width=""80"" height=""32""></li>
+          <li class=""nbc""><img src=""https://a.betuscdn.com/sites/betus/landing/img/nbc-sports-xl.svg"" alt=""NBC Sports"" class=""featured-logo"" width=""180"" height=""29""></li>
+          <li class=""fox""><img src=""https://a.betuscdn.com/sites/betus/landing/img/fox-sports-xl.svg"" alt=""Fox Sports"" class=""featured-logo"" width=""90"" height=""54""></li>
+        </ul>      
+      </div>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+      <a class=""btn-terms"" data-toggle=""modal"" href=""#terms-modal"" id=""terms-modal-btn"">Terms & Conditions</a>
+    </div>
+</div>
+
+
+</body>
+</html>",1,2022-10-19 11:03:12.210,6457,2025-01-09 09:09:32.857
+5897,Pegasus Landing Page,Pegasus Landing Page,Pegasus Landing Page,Pegasus,"<!doctype html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1, shrink-to-fit=no"">
+  <meta name=""description"" content=""Online Sports Betting with America's favorite Online Sportsbook, Casino &amp; Horse Racing. BetUS offers fast payouts so Bet Online on your favorite sports today"">
+  <!--designer EDIT-->
+  <title>BetUS 125% Bonus</title>
+  <link rel=""shortcut icon"" type=""image/jpg"" href=""https://a.betuscdn.com/sites/betus/landing/img/favicon.ico"">
+  <link rel=""stylesheet"" href=""https://a.betuscdn.com/sites/betus/landing/css/landing-052223.min.css"">
+  <!--pixel CODE 033021-->
+  <script src =""https://up.pixel.ad/assets/up.js?um=1"" async></script>
+  <script> cntrUpTag.track('cntrData', '103f7a92731b7ec5');</script>
+  <!--pixel CODE 050923-->
+  <!--designer EDIT-->
+  <script>document.cookie = 'promo=join125; expires='+ new Date(new Date().getTime()+1000*60*60*24*1).toGMTString() + '; path=/; domain=.betus.com.pa';</script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/jquery.min.js"" defer></script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/bootstrap.min.js"" defer></script>
+
+<style>
+/* DESIGNER AREA */
+/* V-110724.2024.3 */
+/* LP FaMa, 121924, MMC-1723, landing-html-pegasuswc.html */
+
+:root {
+  --body-background-color: #06162d;
+  --links-color: #2F3C5A;
+  --titles-color: #2F3C5A;
+  --header-background-color: #000;
+  --header-border-bottom: rgba(0, 0, 0, 0.8);
+  --slogan-color: #cccac8;
+  --logos-background: rgba(0,0,0,0.8);
+  --logos-border: #282728;
+  --button-main-background: hsl(0, 100%, 38%);
+  --button-main-border: hsl(0, 100%, 28%);
+  --button-opening: hsl(0, 100%, 90%);
+  --button-open-border: hsl(0, 100%, 100%);
+  --terms-link-color: rgba(255,255,255,0.53);
+  --terms-link-hover-color: rgba(255,255,255,1);
+/* Keep only https://a.betuscdn.com/sites/betus/landing/img/ */
+  --image-background-xl: url(""https://a.betuscdn.com/sites/betus/landing/img/pegasuswc-xl.webp"");
+  --image-background-md: url(""https://a.betuscdn.com/sites/betus/landing/img/pegasuswc-m.webp"");
+  --image-background-sm: url(""https://a.betuscdn.com/sites/betus/landing/img/pegasuswc-s.webp"");
+}
+
+/* DEV AREA */
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+background-color: var(--body-background-color);
+}
+a { color: var(--links-color); }
+a:hover,
+a:focus {
+color: var(--links-color);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+color: var(--titles-color);
+font-weight: 700;
+}
+#header{
+border-bottom: solid 1px var(--header-border-bottom);
+position: relative;
+background-color: var(--header-background-color);
+}
+.slogan {
+  color: var(--slogan-color);
+}
+.image-cont{
+  background-image: var(--image-background-xl);
+  background-position: top center;
+  background-size: cover;
+}
+.featured-bar{
+  background-color: var(--logos-background);
+  border: solid 1px var(--logos-border);
+}
+.fb-list{
+  font-size: 0.861008610086101vw;
+}
+/* BUTTONS */
+.bt-cont .btn-main {
+font-weight: 700;
+color: #fff;
+background-color: var(--button-main-background);
+border: solid 1px var(--button-main-border);
+}
+.bt-cont .btn-main::before {
+background-color: var(--button-opening);
+}
+.bt-cont .btn-main:hover{
+color: var(--button-main-background);
+border: solid 1px var(--button-open-border);
+}
+@keyframes glowing {
+0% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+50% {
+box-shadow: 0 0 30px var(--button-main-background);
+}
+100% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+}
+.btn-terms {
+    color: var(--terms-link-color);
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.btn-terms:hover, .btn-terms:focus {
+    color: var(--terms-link-hover-color);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 991px){
+.image-cont{
+  background-image: var(--image-background-md);
+  background-position: center center;
+  background-size: cover;
+}
+}
+@media screen and (max-width: 575px){
+.image-cont{
+  background-image: var(--image-background-sm);
+  background-position: center center;
+  background-size: cover;
+}
+}
+</style>
+</head>
+<body class=""image-cont"">
+<!--modal-->
+<div class=""modal"" id=""terms-modal"" tabindex=""-1"">
+<div class=""modal-dialog modal-dialog-centered"">
+<div class=""modal-content bg-dark border border-light"">
+<div class=""modal-header"">
+<h5 class=""modal-title text-light"">Terms and Conditions</h5>
+<button aria-label=""Close"" class=""close text-light"" data-dismiss=""modal"" type=""button""><svg fill=""currentColor"" height=""32px"" style=""enable-background:new 0 0 32 32;"" version=""1.1"" viewbox=""0 0 32 32"" width=""32px"" x=""0px"" xml:space=""preserve"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px""> <path d=""M18.8,16L28.9,5.9c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L16,13.2L5.9,3.1c-0.8-0.8-2-0.8-2.8,0 c-0.8,0.8-0.8,2,0,2.8L13.2,16L3.1,26.1c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6L16,18.8l10.1,10.1 c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L18.8,16z""></path></svg></button></div>
+<!--designer EDIT-->
+<div class=""modal-body"">
+<ol class=""ml-n3"">
+<li>You will receive a 125% sign-up bonus on your first, second and third deposit plus Gambler&#8217;s Insurance.</li>
+<li>A minimum deposit of $100 is required to qualify for the bonus.</li>
+<li>125% sign-up bonus up to $2,000: 100% sports bonus + 25% casino bonus.</li>
+<li>Sports Free Play can be redeemed up to $2,000. A 14X Rollover will apply.</li>
+<li>Casino Free Chip can be redeemed  up to $625. A 30X Playthrough, 7 day expiry date will apply.</li>
+<li>In order to receive a bonus you must use the promo code <strong>JOIN125</strong> in the cashier while making your deposit.</li>
+<li>You must have claimed the 125% sign-up bonus on your first-time deposit in order for it to apply on your second and/or third deposit.</li>
+<li>This promotion is non-transferable.</li>
+<li>For more details regarding Gambler&#8217;s Insurance, <a class=""text-primary"" href=""https://www.betus.com.pa/promotions/gamblers_insurance_241/"" target=""_blank"">Click Here</a>.</li>
+<li>Please see BetUS&#8217; general <a class=""text-primary"" href=""https://www.betus.com.pa/Promotions/PromotionDetail/?bonusId=383"" target=""_blank"">rules</a> for additional terms and conditions regarding bonuses.</li>
+<li>Sports bonuses can only be used in the sportsbook, casino freeplays in the casino.</li>
+<li>BetUS reserves the right to alter or amend the terms and conditions of this promotion at any time without notice.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<!--end MODAL-->
+
+
+<div id=""header"">
+<div class=""main-content"">
+<a href=""https://www.betus.com.pa/join/"">
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/betus_logo.svg"" alt=""BETUS"" class=""logo img-fluid"" width=""226"" height=""48"">
+</a>
+<div class=""h-box-left"">
+<div class=""slogan"">AMERICA&#8217;S <br>FAVORITE <br>SPORTSBOOK</div>
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/30-plus-years-aniversary-xl.svg"" alt=""30+ Years Aniversary"" class=""aniversary"" width=""118"" height=""213"">
+</div>
+</div>
+</div>
+<div id=""content-promos"">
+  <div class=""promo-container main-content"">
+    <div class=""promo-box"">
+      <!--designer EDIT-->
+      <a href=""https://www.betus.com.pa/join/"">
+      <img src=""https://a.betuscdn.com/sites/betus/landing/img/pegasuswc-125.svg"" class=""promo-text"" alt=""Promo"" width=""620"" height=""319"" loading=""lazy"" decoding=""async""></a>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+    </div>
+  </div>
+    <div class=""footer main-content"">
+      <div class=""featured-bar"">
+        <ul class=""fb-list"">
+          <li class=""asfeatured"">AS FEATURED ON</li>
+          <li class=""forbes""><img src=""https://a.betuscdn.com/sites/betus/landing/img/forbes-xl.svg"" alt=""Forbes"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""newsweek""><img src=""https://a.betuscdn.com/sites/betus/landing/img/newsweek-xl.svg"" alt=""Newsweek"" class=""featured-logo"" width=""160"" height=""23""></li>
+          <li class=""sillustrated""><img src=""https://a.betuscdn.com/sites/betus/landing/img/sports-illustrated-xl.svg"" alt=""Sports Illustrated"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""tmz""><img src=""https://a.betuscdn.com/sites/betus/landing/img/tmz-xl.svg"" alt=""Tmz"" class=""featured-logo"" width=""80"" height=""32""></li>
+          <li class=""nbc""><img src=""https://a.betuscdn.com/sites/betus/landing/img/nbc-sports-xl.svg"" alt=""NBC Sports"" class=""featured-logo"" width=""180"" height=""29""></li>
+          <li class=""fox""><img src=""https://a.betuscdn.com/sites/betus/landing/img/fox-sports-xl.svg"" alt=""Fox Sports"" class=""featured-logo"" width=""90"" height=""54""></li>
+        </ul>      
+      </div>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+      <a class=""btn-terms"" data-toggle=""modal"" href=""#terms-modal"" id=""terms-modal-btn"">Terms & Conditions</a>
+    </div>
+</div>
+
+
+</body>
+</html>",1,2023-01-24 15:37:47.593,6457,2025-01-08 16:14:09.360
+5935,ufc-fn1 Landing Page,ufc-fn1 Landing Page,ufc-fn1 Landing Page,ufc-fn1,"<!doctype html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1, shrink-to-fit=no"">
+  <meta name=""description"" content=""Online Sports Betting with America's favorite Online Sportsbook, Casino &amp; Horse Racing. BetUS offers fast payouts so Bet Online on your favorite sports today"">
+  <!--designer EDIT-->
+  <title>BetUS 125% Bonus</title>
+  <link rel=""shortcut icon"" type=""image/jpg"" href=""https://a.betuscdn.com/sites/betus/landing/img/favicon.ico"">
+  <link rel=""stylesheet"" href=""https://a.betuscdn.com/sites/betus/landing/css/landing-052223.min.css"">
+  <!--pixel CODE 033021-->
+  <script src =""https://up.pixel.ad/assets/up.js?um=1"" async></script>
+  <script> cntrUpTag.track('cntrData', '103f7a92731b7ec5');</script>
+  <!--pixel CODE 050923-->
+  <!--designer EDIT-->
+  <script>document.cookie = 'promo=join125; expires='+ new Date(new Date().getTime()+1000*60*60*24*1).toGMTString() + '; path=/; domain=.betus.com.pa';</script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/jquery.min.js"" defer></script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/bootstrap.min.js"" defer></script>
+
+<style>
+/* DESIGNER AREA */
+/* V-110724.2024.3 */
+/* JoGa, 281124, MMC-1683, landing-html-ufc311.html */
+
+:root {
+  --body-background-color: #06162d;
+  --links-color: #2F3C5A;
+  --titles-color: #2F3C5A;
+  --header-background-color: #000;
+  --header-border-bottom: rgba(0, 0, 0, 0.8);
+  --slogan-color: #cccac8;
+  --logos-background: rgba(0,0,0,0.8);
+  --logos-border: #282728;
+  --button-main-background: hsl(0, 100%, 38%);
+  --button-main-border: hsl(0, 100%, 28%);
+  --button-opening: hsl(0, 100%, 90%);
+  --button-open-border: hsl(0, 100%, 100%);
+  --terms-link-color: rgba(255,255,255,0.53);
+  --terms-link-hover-color: rgba(255,255,255,1);
+/* Keep only https://a.betuscdn.com/sites/betus/landing/img/ */
+  --image-background-xl: url(""https://a.betuscdn.com/sites/betus/landing/img/ufc311-xl.webp"");
+  --image-background-md: url(""https://a.betuscdn.com/sites/betus/landing/img/ufc311-md.webp"");
+  --image-background-sm: url(""https://a.betuscdn.com/sites/betus/landing/img/ufc311-sm.webp"");
+}
+
+/* DEV AREA */
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+background-color: var(--body-background-color);
+}
+a { color: var(--links-color); }
+a:hover,
+a:focus {
+color: var(--links-color);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+color: var(--titles-color);
+font-weight: 700;
+}
+#header{
+border-bottom: solid 1px var(--header-border-bottom);
+position: relative;
+background-color: var(--header-background-color);
+}
+.slogan {
+  color: var(--slogan-color);
+}
+.image-cont{
+  background-image: var(--image-background-xl);
+  background-position: top center;
+  background-size: cover;
+}
+.featured-bar{
+  background-color: var(--logos-background);
+  border: solid 1px var(--logos-border);
+}
+.fb-list{
+  font-size: 0.861008610086101vw;
+}
+/* BUTTONS */
+.bt-cont .btn-main {
+font-weight: 700;
+color: #fff;
+background-color: var(--button-main-background);
+border: solid 1px var(--button-main-border);
+}
+.bt-cont .btn-main::before {
+background-color: var(--button-opening);
+}
+.bt-cont .btn-main:hover{
+color: var(--button-main-background);
+border: solid 1px var(--button-open-border);
+}
+@keyframes glowing {
+0% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+50% {
+box-shadow: 0 0 30px var(--button-main-background);
+}
+100% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+}
+.btn-terms {
+    color: var(--terms-link-color);
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.btn-terms:hover, .btn-terms:focus {
+    color: var(--terms-link-hover-color);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 991px){
+.image-cont{
+  background-image: var(--image-background-md);
+  background-position: center center;
+  background-size: cover;
+}
+}
+@media screen and (max-width: 575px){
+.image-cont{
+  background-image: var(--image-background-sm);
+  background-position: center center;
+  background-size: cover;
+}
+}
+</style>
+</head>
+<body class=""image-cont"">
+<!--modal-->
+<div class=""modal"" id=""terms-modal"" tabindex=""-1"">
+<div class=""modal-dialog modal-dialog-centered"">
+<div class=""modal-content bg-dark border border-light"">
+<div class=""modal-header"">
+<h5 class=""modal-title text-light"">Terms and Conditions</h5>
+<button aria-label=""Close"" class=""close text-light"" data-dismiss=""modal"" type=""button""><svg fill=""currentColor"" height=""32px"" style=""enable-background:new 0 0 32 32;"" version=""1.1"" viewbox=""0 0 32 32"" width=""32px"" x=""0px"" xml:space=""preserve"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px""> <path d=""M18.8,16L28.9,5.9c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L16,13.2L5.9,3.1c-0.8-0.8-2-0.8-2.8,0 c-0.8,0.8-0.8,2,0,2.8L13.2,16L3.1,26.1c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6L16,18.8l10.1,10.1 c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L18.8,16z""></path></svg></button></div>
+<!--designer EDIT-->
+<div class=""modal-body"">
+<ol class=""ml-n3"">
+<li>You will receive a 125% sign-up bonus on your first, second and third deposit plus Gambler&#8217;s Insurance.</li>
+<li>A minimum deposit of $100 is required to qualify for the bonus.</li>
+<li>125% sign-up bonus up to $2,000: 100% sports bonus + 25% casino bonus.</li>
+<li>Sports Free Play can be redeemed up to $2,000. A 14X Rollover will apply.</li>
+<li>Casino Free Chip can be redeemed  up to $625. A 30X Playthrough, 7 day expiry date will apply.</li>
+<li>In order to receive a bonus you must use the promo code <strong>JOIN125</strong> in the cashier while making your deposit.</li>
+<li>You must have claimed the 125% sign-up bonus on your first-time deposit in order for it to apply on your second and/or third deposit.</li>
+<li>This promotion is non-transferable.</li>
+<li>For more details regarding Gambler&#8217;s Insurance, <a class=""text-primary"" href=""https://www.betus.com.pa/promotions/gamblers_insurance_241/"" target=""_blank"">Click Here</a>.</li>
+<li>Please see BetUS&#8217; general <a class=""text-primary"" href=""https://www.betus.com.pa/Promotions/PromotionDetail/?bonusId=383"" target=""_blank"">rules</a> for additional terms and conditions regarding bonuses.</li>
+<li>Sports bonuses can only be used in the sportsbook, casino freeplays in the casino.</li>
+<li>BetUS reserves the right to alter or amend the terms and conditions of this promotion at any time without notice.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<!--end MODAL-->
+
+
+<div id=""header"">
+<div class=""main-content"">
+<a href=""https://www.betus.com.pa/join/"">
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/betus_logo.svg"" alt=""BETUS"" class=""logo img-fluid"" width=""226"" height=""48"">
+</a>
+<div class=""h-box-left"">
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/30-plus-years-aniversary-xl.svg"" alt=""30+ Years Aniversary"" class=""aniversary"" width=""118"" height=""213"">
+</div>
+</div>
+</div>
+<div id=""content-promos"">
+  <div class=""promo-container main-content"">
+    <div class=""promo-box"">
+      <!--designer EDIT-->
+      <a href=""https://www.betus.com.pa/join/"">
+      <img src=""https://a.betuscdn.com/sites/betus/landing/img/ufc311-text.svg"" class=""promo-text"" alt=""Promo"" width=""620"" height=""319"" loading=""lazy"" decoding=""async""></a>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+    </div>
+  </div>
+    <div class=""footer main-content"">
+      <div class=""featured-bar"">
+        <ul class=""fb-list"">
+          <li class=""asfeatured"">AS FEATURED ON</li>
+          <li class=""forbes""><img src=""https://a.betuscdn.com/sites/betus/landing/img/forbes-xl.svg"" alt=""Forbes"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""newsweek""><img src=""https://a.betuscdn.com/sites/betus/landing/img/newsweek-xl.svg"" alt=""Newsweek"" class=""featured-logo"" width=""160"" height=""23""></li>
+          <li class=""sillustrated""><img src=""https://a.betuscdn.com/sites/betus/landing/img/sports-illustrated-xl.svg"" alt=""Sports Illustrated"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""tmz""><img src=""https://a.betuscdn.com/sites/betus/landing/img/tmz-xl.svg"" alt=""Tmz"" class=""featured-logo"" width=""80"" height=""32""></li>
+          <li class=""nbc""><img src=""https://a.betuscdn.com/sites/betus/landing/img/nbc-sports-xl.svg"" alt=""NBC Sports"" class=""featured-logo"" width=""180"" height=""29""></li>
+          <li class=""fox""><img src=""https://a.betuscdn.com/sites/betus/landing/img/fox-sports-xl.svg"" alt=""Fox Sports"" class=""featured-logo"" width=""90"" height=""54""></li>
+        </ul>      
+      </div>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+      <a class=""btn-terms"" data-toggle=""modal"" href=""#terms-modal"" id=""terms-modal-btn"">Terms & Conditions</a>
+    </div>
+</div>
+
+
+</body>
+</html>",1,2023-05-04 13:03:28.293,6457,2025-01-08 09:38:07.227
+6305,divisional Landing Page,divisional Landing Page,divisional Landing Page,divisional," <!doctype html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1, shrink-to-fit=no"">
+  <meta name=""description"" content=""Online Sports Betting with America's favorite Online Sportsbook, Casino &amp; Horse Racing. BetUS offers fast payouts so Bet Online on your favorite sports today"">
+  <!--designer EDIT-->
+  <title>BetUS 125% Bonus</title>
+  <link rel=""shortcut icon"" type=""image/jpg"" href=""https://a.betuscdn.com/sites/betus/landing/img/favicon.ico"">
+  <link rel=""stylesheet"" href=""https://a.betuscdn.com/sites/betus/landing/css/landing-052223.min.css"">
+  <!--pixel CODE 033021-->
+  <script src =""https://up.pixel.ad/assets/up.js?um=1"" async></script>
+  <script> cntrUpTag.track('cntrData', '103f7a92731b7ec5');</script>
+  <!--pixel CODE 050923-->
+  <!--designer EDIT-->
+  <script>document.cookie = 'promo=join125; expires='+ new Date(new Date().getTime()+1000*60*60*24*1).toGMTString() + '; path=/; domain=.betus.com.pa';</script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/jquery.min.js"" defer></script>
+  <script src=""https://a.betuscdn.com/sites/betus/landing/js/bootstrap.min.js"" defer></script>
+
+<style>
+/* DESIGNER AREA */
+/* V-110724.2024.3 */
+/* LP MiMo, 122324, MMC-1649, landing-html-dp.html */
+
+:root {
+  --body-background-color: #06162d;
+  --links-color: #2F3C5A;
+  --titles-color: #2F3C5A;
+  --header-background-color: #000;
+  --header-border-bottom: rgba(0, 0, 0, 0.8);
+  --slogan-color: #cccac8;
+  --logos-background: rgba(0,0,0,0.8);
+  --logos-border: #282728;
+  --button-main-background: hsl(0, 100%, 38%);
+  --button-main-border: hsl(0, 100%, 28%);
+  --button-opening: hsl(0, 100%, 90%);
+  --button-open-border: hsl(0, 100%, 100%);
+  --terms-link-color: rgba(255,255,255,0.53);
+  --terms-link-hover-color: rgba(255,255,255,1);
+/* Keep only https://a.betuscdn.com/sites/betus/landing/img/ */
+  --image-background-xl: url(""https://a.betuscdn.com/sites/betus/landing/img/dp-xl.webp"");
+  --image-background-md: url(""https://a.betuscdn.com/sites/betus/landing/img/dp-md.webp"");
+  --image-background-sm: url(""https://a.betuscdn.com/sites/betus/landing/img/dp-sm.webp"");
+}
+
+/* DEV AREA */
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #fff;
+background-color: var(--body-background-color);
+}
+a { color: var(--links-color); }
+a:hover,
+a:focus {
+color: var(--links-color);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+color: var(--titles-color);
+font-weight: 700;
+}
+#header{
+border-bottom: solid 1px var(--header-border-bottom);
+position: relative;
+background-color: var(--header-background-color);
+}
+.slogan {
+  color: var(--slogan-color);
+}
+.image-cont{
+  background-image: var(--image-background-xl);
+  background-position: top center;
+  background-size: cover;
+}
+.featured-bar{
+  background-color: var(--logos-background);
+  border: solid 1px var(--logos-border);
+}
+.fb-list{
+  font-size: 0.861008610086101vw;
+}
+/* BUTTONS */
+.bt-cont .btn-main {
+font-weight: 700;
+color: #fff;
+background-color: var(--button-main-background);
+border: solid 1px var(--button-main-border);
+}
+.bt-cont .btn-main::before {
+background-color: var(--button-opening);
+}
+.bt-cont .btn-main:hover{
+color: var(--button-main-background);
+border: solid 1px var(--button-open-border);
+}
+@keyframes glowing {
+0% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+50% {
+box-shadow: 0 0 30px var(--button-main-background);
+}
+100% {
+box-shadow: 0 0 5px hsl(0, 100%, 0%);
+}
+}
+.btn-terms {
+    color: var(--terms-link-color);
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.btn-terms:hover, .btn-terms:focus {
+    color: var(--terms-link-hover-color);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 991px){
+.image-cont{
+  background-image: var(--image-background-md);
+  background-position: center center;
+  background-size: cover;
+}
+}
+@media screen and (max-width: 575px){
+.image-cont{
+  background-image: var(--image-background-sm);
+  background-position: center center;
+  background-size: cover;
+}
+}
+</style>
+</head>
+<body class=""image-cont"">
+<!--modal-->
+<div class=""modal"" id=""terms-modal"" tabindex=""-1"">
+<div class=""modal-dialog modal-dialog-centered"">
+<div class=""modal-content bg-dark border border-light"">
+<div class=""modal-header"">
+<h5 class=""modal-title text-light"">Terms and Conditions</h5>
+<button aria-label=""Close"" class=""close text-light"" data-dismiss=""modal"" type=""button""><svg fill=""currentColor"" height=""32px"" style=""enable-background:new 0 0 32 32;"" version=""1.1"" viewbox=""0 0 32 32"" width=""32px"" x=""0px"" xml:space=""preserve"" xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" y=""0px""> <path d=""M18.8,16L28.9,5.9c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L16,13.2L5.9,3.1c-0.8-0.8-2-0.8-2.8,0 c-0.8,0.8-0.8,2,0,2.8L13.2,16L3.1,26.1c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6L16,18.8l10.1,10.1 c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L18.8,16z""></path></svg></button></div>
+<!--designer EDIT-->
+<div class=""modal-body"">
+<ol class=""ml-n3"">
+<li>You will receive a 125% sign-up bonus on your first, second and third deposit plus Gambler&#8217;s Insurance.</li>
+<li>A minimum deposit of $100 is required to qualify for the bonus.</li>
+<li>125% sign-up bonus up to $2,000: 100% sports bonus + 25% casino bonus.</li>
+<li>Sports Free Play can be redeemed up to $2,000. A 14X Rollover will apply.</li>
+<li>Casino Free Chip can be redeemed  up to $625. A 30X Playthrough, 7 day expiry date will apply.</li>
+<li>In order to receive a bonus you must use the promo code <strong>JOIN125</strong> in the cashier while making your deposit.</li>
+<li>You must have claimed the 125% sign-up bonus on your first-time deposit in order for it to apply on your second and/or third deposit.</li>
+<li>This promotion is non-transferable.</li>
+<li>For more details regarding Gambler&#8217;s Insurance, <a class=""text-primary"" href=""https://www.betus.com.pa/promotions/gamblers_insurance_241/"" target=""_blank"">Click Here</a>.</li>
+<li>Please see BetUS&#8217; general <a class=""text-primary"" href=""https://www.betus.com.pa/Promotions/PromotionDetail/?bonusId=383"" target=""_blank"">rules</a> for additional terms and conditions regarding bonuses.</li>
+<li>Sports bonuses can only be used in the sportsbook, casino freeplays in the casino.</li>
+<li>BetUS reserves the right to alter or amend the terms and conditions of this promotion at any time without notice.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<!--end MODAL-->
+
+
+<div id=""header"">
+<div class=""main-content"">
+<a href=""https://www.betus.com.pa/join/"">
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/betus_logo.svg"" alt=""BETUS"" class=""logo img-fluid"" width=""226"" height=""48"">
+</a>
+<div class=""h-box-left"">
+<div class=""slogan"">AMERICA&#8217;S <br>FAVORITE <br>SPORTSBOOK</div>
+<img src=""https://a.betuscdn.com/sites/betus/landing/img/30-plus-years-aniversary-xl.svg"" alt=""30+ Years Aniversary"" class=""aniversary"" width=""118"" height=""213"">
+</div>
+</div>
+</div>
+<div id=""content-promos"">
+  <div class=""promo-container main-content"">
+    <div class=""promo-box"">
+      <!--designer EDIT-->
+      <a href=""https://www.betus.com.pa/join/"">
+      <img src=""https://a.betuscdn.com/sites/betus/landing/img/dp-txt.svg"" class=""promo-text"" alt=""Promo"" width=""620"" height=""319"" loading=""lazy"" decoding=""async""></a>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+    </div>
+  </div>
+    <div class=""footer main-content"">
+      <div class=""featured-bar"">
+        <ul class=""fb-list"">
+          <li class=""asfeatured"">AS FEATURED ON</li>
+          <li class=""forbes""><img src=""https://a.betuscdn.com/sites/betus/landing/img/forbes-xl.svg"" alt=""Forbes"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""newsweek""><img src=""https://a.betuscdn.com/sites/betus/landing/img/newsweek-xl.svg"" alt=""Newsweek"" class=""featured-logo"" width=""160"" height=""23""></li>
+          <li class=""sillustrated""><img src=""https://a.betuscdn.com/sites/betus/landing/img/sports-illustrated-xl.svg"" alt=""Sports Illustrated"" class=""featured-logo"" width=""123"" height=""32""></li>
+          <li class=""tmz""><img src=""https://a.betuscdn.com/sites/betus/landing/img/tmz-xl.svg"" alt=""Tmz"" class=""featured-logo"" width=""80"" height=""32""></li>
+          <li class=""nbc""><img src=""https://a.betuscdn.com/sites/betus/landing/img/nbc-sports-xl.svg"" alt=""NBC Sports"" class=""featured-logo"" width=""180"" height=""29""></li>
+          <li class=""fox""><img src=""https://a.betuscdn.com/sites/betus/landing/img/fox-sports-xl.svg"" alt=""Fox Sports"" class=""featured-logo"" width=""90"" height=""54""></li>
+        </ul>      
+      </div>
+      <div class=""bt-cont""><a class=""btn btn-main"" href=""https://www.betus.com.pa/join/""><span>BET NOW</span></a></div>
+      <a class=""btn-terms"" data-toggle=""modal"" href=""#terms-modal"" id=""terms-modal-btn"">Terms & Conditions</a>
+    </div>
+</div>
+
+
+</body>
+</html>",1,2025-01-08 09:28:29.933,6457,2025-01-08 09:29:50.870
