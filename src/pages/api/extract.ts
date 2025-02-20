@@ -33,7 +33,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(400).json({ success: false, error: "No file uploaded" });
     }
 
-    const filePath = file.filepath; 
+    const filePath = file.filepath;
     if (!filePath) {
       return res.status(500).json({ success: false, error: "Unable to get file path" });
     }
@@ -56,22 +56,27 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const modalContent = content.match(/<div class="modal-body">([\s\S]*?)<\/div>/);
 
 
-      console.log(modalContent);
-const promoMatch = content.match(/document\.cookie = 'promo=(.*?); expires=/);
+
+      const promoMatch = content.match(/document\.cookie = 'promo=(.*?); expires=/);
       // console.log(modalMatch);
 
-      const title= content.match(/<title>(.*?)<\/title>/s);
+      const title = content.match(/<title>(.*?)<\/title>/s);
 
-      const bodyTag= content.match(/<body[\s\S]*?<\/body>/s);
+      const bodyTag = content.match(/<body[\s\S]*?<\/body>/s);
 
-      const metaDescription= content.match(/<meta name="description" content="(.*?)"/s);
+      if (modalContent) {
+        console.log("getiing content")
+        console.log(modalContent[0]);
+      }
+
+      const metaDescription = content.match(/<meta name="description" content="(.*?)"/s);
 
       return {
         ...row,
         image_background_xl: xlMatch ? xlMatch[1] : "",
         image_background_md: mdMatch ? mdMatch[1] : "",
         image_background_sm: smMatch ? smMatch[1] : "",
-        modal_content: modalContent ? modalContent[1] : "",
+        modal_content: modalContent ? modalContent[0] : "",
         promo_code: promoMatch ? promoMatch[1] : "",
         PageTitle: title ? title[1] : "",
         metaDescription: metaDescription ? metaDescription[1] : "",
