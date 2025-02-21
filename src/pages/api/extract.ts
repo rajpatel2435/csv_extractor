@@ -46,13 +46,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(500).json({ success: false, error: "Unable to get file path" });
     }
 
-    console.log("Reading file from disk");
+
     const fileData = fs.readFileSync(filePath, "utf8");
-    console.log("File data:", fileData);
+
 
     try {
       const { data } = Papa.parse(fileData, { header: true, skipEmptyLines: true });
-      console.log("Parsed data:", data);
 
       const updatedData = (data as Record<string, string>[]).map((row) => {
         const content = row.Content || "";
@@ -87,12 +86,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         };
       });
 
-      console.log("Updated data:", updatedData);
+
 
       const outputPath = path.join(tmpDir, "processed.csv");
-      console.log("Writing output file to disk");
+
       fs.writeFileSync(outputPath, Papa.unparse(updatedData));
-      console.log("Output file written");
+
 
       res.status(200).json({ success: true, message: "File processed successfully!", fileUrl: "/processed.csv" });
     } catch (error) {
