@@ -1,4 +1,3 @@
-import csv from 'csv-parser';
 import Papa from 'papaparse';
 import fs from 'fs';
 import path from 'path';
@@ -54,7 +53,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         throw new Error('Failed to parse CSV file');
       }
 
-      const updatedData = data.map((row: any) => {
+      const updatedData = (data as { Content: string }[]).map((row) => {
         const content = row?.Content || '';
 
         const xlMatch = content.match(/--image-background-xl: url\(\"(.*?)\"\)/);
