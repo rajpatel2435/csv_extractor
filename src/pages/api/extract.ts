@@ -78,7 +78,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       // Save in the `public/processed/` folder to make it accessible from the frontend
       const fileName = file.originalFilename ? `${file.originalFilename}.processed.csv` : 'processed.csv';
-      const outputDir = path.join(process.cwd(), 'public', 'processed');
+      const outputDir = path.join(tmpdir, 'processed');
       const outputPath = path.join(outputDir, fileName);
 
       // Ensure the directory exists
