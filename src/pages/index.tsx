@@ -1,13 +1,17 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [fileUrl, setFileUrl] = useState('');
 
-  const handleFileChange = (e:any) => {
-    setFile(e.target.files[0]);
+  /**
+   * Handle file input change.
+   * @param {React.ChangeEvent<HTMLInputElement>} e - Input event.
+   */
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    setFile(e?.target?.files?.[0] ?? null);
   };
 
   const handleUpload = async () => {
@@ -38,6 +42,7 @@ export default function Home() {
       }
     } catch (error) {
       setMessage('Something went wrong.');
+      console.error(error);
     } finally {
       setLoading(false);
     }

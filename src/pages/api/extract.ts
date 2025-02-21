@@ -16,7 +16,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const file = await new Promise<formidable.File | null>((resolve, reject) => {
       const form = new formidable.IncomingForm();
+      //@ts-expect-error there is issue with this package
       form.uploadDir = path.join(process.cwd(), "public");
+      // @ts-expect-error issue with  package
       form.keepExtensions = true;
 
       form.parse(req, (err, fields, files) => {
@@ -41,42 +43,35 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const fileData = fs.readFileSync(filePath, "utf8");
     const { data } = Papa.parse(fileData, { header: true, skipEmptyLines: true });
 
-    const updatedData = data.map((row: Record<string, string>) => {
+    const updatedData = (data as Record<string, string>[]).map((row) => {
       const content = row.Content || "";
 
-
+      // xl bg image
 
       const xlMatch = content.match(/--image-background-xl: url\(\"(.*?)\"\)/);
-
+      // md bg image
       const mdMatch = content.match(/--image-background-md: url\(\"(.*?)\"\)/);
-
+      // sm bg image
       const smMatch = content.match(/--image-background-sm: url\(\"(.*?)\"\)/);
 
-
+      // modal content
       const modalContent = content.match(/<div class="modal-body">([\s\S]*?)<\/div>/);
 
 
-
+      // fetch promo code
       const promoMatch = content.match(/document\.cookie = 'promo=(.*?); expires=/);
-      // console.log(modalMatch);
 
-      const title = content.match(/<title>(.*?)<\/title>/s);
-
-      const bodyTag = content.match(/<body[\s\S]*?<\/body>/s);
-
-      if (modalContent) {
-        console.log("getiing content")
-        console.log(modalContent[0]);
-      }
-
-      const metaDescription = content.match(/<meta name="description" content="(.*?)"/s);
+      // fetch title
+      const title = content.match(/<title>(.*?)<\/title>/);
+      // fetch meta description
+      const metaDescription = content.match(/<meta name="description" content="(.*?)"/);
 
       return {
         ...row,
         image_background_xl: xlMatch ? xlMatch[1] : "",
         image_background_md: mdMatch ? mdMatch[1] : "",
         image_background_sm: smMatch ? smMatch[1] : "",
-        modal_content: modalContent ? modalContent[0] : "",
+        modal_content: modalContent ? modalContent[0].replace(/\n/g, '') : "",
         promo_code: promoMatch ? promoMatch[1] : "",
         PageTitle: title ? title[1] : "",
         metaDescription: metaDescription ? metaDescription[1] : "",
