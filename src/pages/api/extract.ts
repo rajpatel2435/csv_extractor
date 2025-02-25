@@ -1,13 +1,10 @@
 import Papa from 'papaparse';
 import fs from 'fs';
-import path from 'path';
 import { NextApiRequest, NextApiResponse } from 'next';
-import * as formidable from 'formidable';
-import * as os from 'os';
+import formidable from 'formidable';
 
-const tmpdir = os.tmpdir();
 export const config = {
-  api: { bodyParser: false },
+  api: { bodyParser: false }, 
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -16,32 +13,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    const file = await new Promise<formidable.File | null>((resolve, reject) => {
-      const form = new formidable.IncomingForm();
-      // @ts-expect-error remove error from validation
-      form.uploadDir = tmpdir;
-       // @ts-expect-error remove error from validation
-      form.keepExtensions = true;
-
-      form.parse(req, (err, fields, files) => {
-        if (err) {
-          console.error('Error parsing file upload:', err);
-          reject(err);
-        } else {
-          const uploadedFile = files.file ? (Array.isArray(files.file) ? files.file[0] : files.file) : null;
-          resolve(uploadedFile as formidable.File);
-        }
-      });
+  
+    const form = formidable({
+      keepExtensions: true, 
+      maxFileSize: 5 * 1024 * 1024, 
+      allowEmptyFiles: false,
     });
 
+    const [, files] = await form.parse(req);
+
+    const file = files.file ? (Array.isArray(files.file) ? files.file[0] : files.file) : null;
+
     if (!file) {
-      console.error('No file uploaded');
       return res.status(400).json({ success: false, error: 'No file uploaded' });
     }
 
-    const filePath = file.filepath;
+    const filePath = file.filepath; 
     if (!filePath) {
-      console.error('Unable to get file path');
       return res.status(500).json({ success: false, error: 'Unable to get file path' });
     }
 
@@ -49,6 +37,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     try {
       const { data } = Papa.parse(fileData, { header: true, skipEmptyLines: true });
+
       if (!data) {
         throw new Error('Failed to parse CSV file');
       }
@@ -63,6 +52,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         const promoMatch = content.match(/document\.cookie = 'promo=(.*?); expires=/);
         const title = content.match(/<title>(.*?)<\/title>/);
         const metaDescription = content.match(/<meta name="description" content="(.*?)"/);
+        const hrefMatch = content.match(/<a\s+class=["']btn btn-main["']\s+href=["']([^"']+)["']/);
+        const buttonTextMatch = content.match(/<a\s+class=["']btn btn-main["'][^>]*>\s*<span>(.*?)<\/span>\s*<\/a>/);
+
+        const imgMatch = content.match(/<img\s+[^>]*src=["']([^"']+)["'][^>]*class=["'][^"']*promo-text[^"']*["'][^>]*alt=["']([^"']+)["']/);
 
         return {
           ...row,
@@ -70,28 +63,25 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           image_background_md: mdMatch ? mdMatch[1] : '',
           image_background_sm: smMatch ? smMatch[1] : '',
           modal_content: modalContent ? modalContent[0].replace(/\n/g, '') : '',
-          promo_code: promoMatch ? promoMatch[1] : '',
+          promocode: promoMatch ? promoMatch[1] : '',
           PageTitle: title ? title[1] : '',
           metaDescription: metaDescription ? metaDescription[1] : '',
+          promoImage: hrefMatch ? hrefMatch[1] : '',
+          buttonText: buttonTextMatch ? buttonTextMatch[1] : '',
+          imgSrc: imgMatch ? imgMatch[1] : '',
+          imgAlt: imgMatch ? imgMatch[2] : '',
         };
       });
 
-      // Save in the `public/processed/` folder to make it accessible from the frontend
-      const fileName = file.originalFilename ? `${file.originalFilename}.processed.csv` : 'processed.csv';
-      const outputDir = path.join(tmpdir, 'processed');
-      const outputPath = path.join(outputDir, fileName);
+      // Convert updated data back to CSV format
+      const csvData = Papa.unparse(updatedData);
 
-      // Ensure the directory exists
-      fs.mkdirSync(outputDir, { recursive: true });
+      console.log(updatedData);
+     
+      res.setHeader('Content-Type', 'text/csv');
+      res.setHeader('Content-Disposition', 'attachment; filename="processed_data.csv"');
 
-      // Write the processed file
-      fs.writeFileSync(outputPath, Papa.unparse(updatedData));
-
-      // Send file URL that can be accessed from the frontend
-      res.status(200).json({
-        success: true,
-        fileUrl: `/processed/${fileName}`, // Now accessible in the browser
-      });
+      return res.status(200).send(csvData);
     } catch (error) {
       console.error('Error processing file:', error);
       res.status(500).json({ success: false, error: 'Error processing file' });

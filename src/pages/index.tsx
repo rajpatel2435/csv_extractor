@@ -32,14 +32,17 @@ export default function Home() {
         method: 'POST',
         body: formData,
       });
-
-      const result = await response.json();
-      if (result.success) {
-        setMessage('File processed successfully!');
-        setFileUrl(result.fileUrl);
-      } else {
-        setMessage('Error processing file.');
-      }
+    
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'processed_data.csv';
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+    
+      setMessage('File processed successfully!');
     } catch (error) {
       setMessage('Something went wrong.');
       console.error(error);
