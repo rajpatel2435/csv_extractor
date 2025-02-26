@@ -66,7 +66,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           promocode: promoMatch ? promoMatch[1] : '',
           PageTitle: title ? title[1] : '',
           metaDescription: metaDescription ? metaDescription[1] : '',
-          promoImage: hrefMatch ? hrefMatch[1] : '',
+          buttonLink: hrefMatch ? hrefMatch[1] : '',
           buttonText: buttonTextMatch ? buttonTextMatch[1] : '',
           imgSrc: imgMatch ? imgMatch[1] : '',
           imgAlt: imgMatch ? imgMatch[2] : '',
