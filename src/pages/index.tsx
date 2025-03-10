@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   const handleUpload = async () => {
-    if (files.length < 2) {
+    if (files.length < 1) {
       setMessage('Please select at least 2 files.');
       return;
     }

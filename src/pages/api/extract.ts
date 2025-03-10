@@ -8,6 +8,18 @@ export const config = {
   api: { bodyParser: false },
 };
 
+
+function rgbaToHex(rgba: string | null | undefined): string {
+  if (rgba && rgba.startsWith('rgba')) {
+    const match = rgba.match(/rgba\((\d+),\s*(\d+),\s*(\d+),\s*(\d+(?:\.\d+)?)\)/);
+    if (match) {
+      const [r, g, b, a] = match.slice(1).map(Number);
+      return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+    }
+  }
+  return rgba || '';
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });
@@ -24,7 +36,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
     });
 
-    if (!files.file || files.file.length < 2) {
+    if (!files.file ) {
       return res.status(400).json({ success: false, error: 'Two files are required' });
     }
 
@@ -49,22 +61,18 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // Parse both files
     const firstData = parseFile(firstFile) as Record<string, string>[];
-    const secondData  = parseFile(secondFile) as Record<string, string>[];
+    // const secondData  = parseFile(secondFile) as Record<string, string>[];
     // console.log(firstData);
 
     // Extract StaticContentID where "Keep/Delete" is "Keep - New"
-    const validIDs = new Set < string | string > (
-      firstData
-        .filter((row : Record<string, string>) => row["Keep / Delete"] === "Keep - New")
-        .map((row : Record<string, string>) => row["StaticContentID"])
-    );
+    // const validIDs = new Set < string | string > (
+    //   firstData
+    //     .filter((row : Record<string, string>) => row["Keep / Delete"] === "Keep - New")
+    //     .map((row : Record<string, string>) => row["StaticContentID"])
+    // );
 
     // Filter the second file based on matching StaticContentID
-    const updatedData = secondData
-      .filter((row: Record<string, string>) =>
-// @ts-expect-error avoid issue here
-        validIDs.has(Number(row["StaticContentID"])))
-      .map((row: Record<string, string>) => {
+    const updatedData = firstData.map((row: Record<string, string>) => {
 
         const content = row?.Content || '';
 
@@ -74,7 +82,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           image_background_xl: content.match(/--image-background-xl: url\(\"(.*?)\"\)/)?.[1] || '',
           image_background_md: content.match(/--image-background-md: url\(\"(.*?)\"\)/)?.[1] || '',
           image_background_sm: content.match(/--image-background-sm: url\(\"(.*?)\"\)/)?.[1] || '',
-          modal_content: content.match(/<div class="modal-body">([\s\S]*?)<\/div>/)?.[0]?.replace(/\n/g, '') || '',
+          headerBackgroundColor: content.match(/--header-background-color: (.*?);/)?.[1] || '#000000', 
+          headerBorderBottom: rgbaToHex(content.match(/--header-border-bottom: (.*?);/)?.[1]) || '#000000', 
+          modal_content: content.match(/<ol class="ml-n3">([\s\S]*?)<\/ol>/)?.[0]?.replace(/\n/g, '') || '',
           promocode: content.match(/document\.cookie = 'promo=(.*?); expires=/)?.[1] || '',
           PageTitle: content.match(/<title>(.*?)<\/title>/)?.[1] || '',
           metaDescription: content.match(/<meta name="description" content="(.*?)"/)?.[1] || '',
